@@ -8,6 +8,6 @@
     <ReleaseStream Condition="'$(ReleaseStream)' == ''">CANARY</ReleaseStream>
     <RepositoryUrl>https://github.com/owaits/Data.Tracking</RepositoryUrl>
     <PackageTags>Comms, GreenGo</PackageTags>
-    <Description>GreenGo is a Comms system used within the live events inductry. This package allows you to load a GreenGo project into your project make changes and save the changes back to a project file that you can load into GreenGo Control. </Description>
+    <Description>GreenGo is a comms system used within the live events industry. This package allows you to load a GreenGo project, make changes and save the changes back to a project file that you can load into GreenGo Control software.</Description>
   </PropertyGroup>
 </Project>
