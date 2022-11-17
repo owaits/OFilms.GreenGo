@@ -5,9 +5,14 @@ VisualStudioVersion = 17.2.32408.312
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OFilms.GreenGo.Project", "OFilms.GreenGo\OFilms.GreenGo.Project.csproj", "{33694906-1325-45B2-AC9B-DACF34B7B560}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OFilms.GreenGo.Config.Tests", "OFilms.GreenGo.Config.Tests\OFilms.GreenGo.Config.Tests.csproj", "{4FD2CB17-C75A-499F-8648-2A8337823B44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OFilms.GreenGo.Config.Tests", "OFilms.GreenGo.Config.Tests\OFilms.GreenGo.Config.Tests.csproj", "{4FD2CB17-C75A-499F-8648-2A8337823B44}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3E67A62E-7FE8-4CC6-8267-8665E52AC28C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4910D42C-445B-4274-999C-69B0DAB6D47F}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

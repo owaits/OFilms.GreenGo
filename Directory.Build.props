@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <BuildVersion Condition="'$(BuildVersion)' == ''">1.0.1</BuildVersion>
+    <Version>$(BuildVersion)</Version>
+    <Authors>Oliver Waits</Authors>
+    <Company>OW Productions Ltd.</Company>
+    <Copyright>Copyright © OW Productions Ltd. $(Year:yyyy)</Copyright>
+    <ReleaseStream Condition="'$(ReleaseStream)' == ''">CANARY</ReleaseStream>
+    <RepositoryUrl>https://github.com/owaits/Data.Tracking</RepositoryUrl>
+    <PackageTags>Comms, GreenGo</PackageTags>
+    <Description>GreenGo is a Comms system used within the live events inductry. This package allows you to load a GreenGo project into your project make changes and save the changes back to a project file that you can load into GreenGo Control. </Description>
+  </PropertyGroup>
+</Project>
