@@ -24,7 +24,7 @@ namespace OFilms.GreenGo.Project
             if (value == null)
                 throw new ArgumentNullException(nameof(value));
 
-            return new ConfigId(long.Parse(value[8..], System.Globalization.NumberStyles.HexNumber), long.Parse(value.Substring(9, 8), System.Globalization.NumberStyles.HexNumber));
+            return new ConfigId(long.Parse(value.Substring(0,8), System.Globalization.NumberStyles.HexNumber), long.Parse(value.Substring(9, 8), System.Globalization.NumberStyles.HexNumber));
         }
 
         public override string ToString()

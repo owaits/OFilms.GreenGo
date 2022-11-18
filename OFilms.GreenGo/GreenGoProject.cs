@@ -59,19 +59,29 @@ namespace OFilms.GreenGo.Project
         {           
             using (FileStream stream = File.OpenRead(filename))
             {
-                var project = JsonSerializer.Deserialize<GreenGoProject>(stream)!;
-                return project;
+                return Load(stream);
             }
+        }
+
+        public static GreenGoProject Load(Stream projectStream)
+        {
+            var project = JsonSerializer.Deserialize<GreenGoProject>(projectStream)!;
+            return project;
         }
 
         public void Save(string filename)
         {
-            Settings.SavedAtTimestamp = DateTime.UtcNow;
-
             using (FileStream stream = File.Create(filename))
             {
-                JsonSerializer.Serialize<GreenGoProject>(stream, this, new JsonSerializerOptions { WriteIndented = true  });
+                Save(stream);
             }
+        }
+
+        public void Save(Stream projectStream)
+        {
+            Settings.SavedAtTimestamp = DateTime.UtcNow;
+
+            JsonSerializer.Serialize<GreenGoProject>(projectStream, this, new JsonSerializerOptions { WriteIndented = true });
         }
 
         #endregion
