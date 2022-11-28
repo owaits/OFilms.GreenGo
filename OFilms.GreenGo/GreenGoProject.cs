@@ -36,6 +36,8 @@ namespace OFilms.GreenGo.Project
         [JsonConverter(typeof(JsonKeyedListConverter<Room>))]
         public List<Room> Rooms { get; set; } = new List<Room>();
 
+        public string Binary { get; set; }
+
         [JsonExtensionData]
         public Dictionary<string, JsonElement>? ExtensionData { get; set; }
 
