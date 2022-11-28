@@ -99,7 +99,7 @@ namespace OFilms.GreenGo.Project
 
         public void AddToGroup(Group group)
         {
-            int userId = Channels.Any() ? Channels.Max(item => item.Id) + 1 : 0;
+            int userId = Channels.Any() ? Channels.Max(item => item.Id) + 1 : 1;
 
             var newChannel = new Channel(userId);
             newChannel.Assign.CreateLink(group);
