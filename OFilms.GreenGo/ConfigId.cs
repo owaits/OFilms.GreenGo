@@ -29,7 +29,7 @@ namespace OFilms.GreenGo.Project
 
         public override string ToString()
         {
-            return $"{Id1:X8}-{Id1:X8}";
+            return $"{Id1:X8}-{Id2:X8}";
         }
     }
 }

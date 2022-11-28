@@ -43,12 +43,12 @@ namespace OFilms.GreenGo.Project
 
         public int GetNextGroupId()
         {
-            return Groups.Any() ? Groups.Max(item => item.Id) + 1 : 0;
+            return Groups.Any() ? Groups.Max(item => item.Id) + 1 : 1;
         }
 
         public int GetNextUserId()
         {
-            return Users.Any() ? Users.Max(item => item.Id) + 1 : 0;
+            return Users.Any() ? Users.Max(item => item.Id) + 1 : 1;
         }
 
         #endregion
