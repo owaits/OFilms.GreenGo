@@ -25,5 +25,13 @@ namespace OFilms.GreenGo.Config.Tests
             var project = GreenGoProject.Load("OFilms Default v3 10.11.a.gg5");
             project.Save("CompareProject.gg5");
         }
+
+        [TestMethod]
+        [DeploymentItem("TestFiles/Bede's GreenGo.gg5")]
+        public void LoadSaveComparisonTest2()
+        {
+            var project = GreenGoProject.Load("Bede's GreenGo.gg5");
+            project.Save("CompareProject2.gg5");
+        }
     }
 }

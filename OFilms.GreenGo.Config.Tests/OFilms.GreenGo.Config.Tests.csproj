@@ -24,6 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="TestFiles\Bede%27s GreenGo.gg5">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="TestFiles\OFilms Default v3 10.11.a.gg5">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

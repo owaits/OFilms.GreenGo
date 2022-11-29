@@ -25,7 +25,7 @@ namespace OFilms.GreenGo.Project.JsonConverters
                             {
                                 case "keys":
                                 case "badge":
-                                    reader.Skip();
+                                    reader.TrySkip();
                                     break;
                                 default:
                                     keyList.Add(JsonSerializer.Deserialize<TValue>(ref reader, options)!);

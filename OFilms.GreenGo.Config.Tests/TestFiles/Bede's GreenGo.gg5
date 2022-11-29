@@ -1,0 +1,844 @@
+{
+  "Settings": {
+    "configId": "7E19B85B-6E924CF9",
+    "Name": "Bede\u0027s GreenGo",
+    "Description": "",
+    "SampleRate": 32000,
+    "MulticastAddress": "239.1.42.180",
+    "Colors": {
+      "0": {
+        "Led": {
+          "C1": 4,
+          "C2": 0,
+          "Rate": 0
+        }
+      },
+      "1": {
+        "Led": {
+          "C1": 4,
+          "C2": 0,
+          "Rate": 0
+        }
+      },
+      "2": {
+        "Led": {
+          "C1": 4,
+          "C2": 0,
+          "Rate": 0
+        }
+      },
+      "3": {
+        "Led": {
+          "C1": 4,
+          "C2": 0,
+          "Rate": 0
+        }
+      },
+      "4": {
+        "Led": {
+          "C1": 4,
+          "C2": 0,
+          "Rate": 0
+        }
+      },
+      "5": {
+        "Led": {
+          "C1": 9,
+          "C2": 0,
+          "Rate": 0
+        }
+      },
+      "6": {
+        "Led": {
+          "C1": 7,
+          "C2": 4,
+          "Rate": 5
+        }
+      },
+      "7": {
+        "Led": {
+          "C1": 3,
+          "C2": 0,
+          "Rate": 0
+        }
+      },
+      "8": {
+        "Led": {
+          "C1": 3,
+          "C2": 0,
+          "Rate": 0
+        }
+      },
+      "9": {
+        "Led": {
+          "C1": 7,
+          "C2": 0,
+          "Rate": 3
+        }
+      },
+      "10": {
+        "Led": {
+          "C1": 8,
+          "C2": 0,
+          "Rate": 0
+        }
+      },
+      "11": {
+        "Led": {
+          "C1": 3,
+          "C2": 0,
+          "Rate": 0
+        }
+      },
+      "13": {
+        "Led": {
+          "C1": 2,
+          "C2": 0,
+          "Rate": 0
+        }
+      },
+      "14": {
+        "Led": {
+          "C1": 2,
+          "C2": 1,
+          "Rate": 3
+        }
+      },
+      "15": {
+        "Led": {
+          "C1": 9,
+          "C2": 0,
+          "Rate": 0
+        }
+      }
+    },
+    "ConfigPassword": "bcc1a045-39c3-7370-72b5-9e313368b04a",
+    "ConfigPasswordSet": 0,
+    "AdminPassword": "7de32206-2328-c394-0e40-560ae39f3e8b",
+    "AdminPasswordSet": 0,
+    "TechPincode": "0"
+  },
+  "Users": {
+    "keys": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "badge": 0,
+    "1": {
+      "Name": "Stage 1",
+      "DisplayName": "",
+      "Description": "",
+      "Color": 0,
+      "Mode": 0,
+      "Channels": {
+        "keys": [],
+        "badge": 0
+      },
+      "SpecialChannels": {
+        "Program": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Announce": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Emergency": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Direct": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        }
+      },
+      "Settings": {
+        "ActiveTime": 3,
+        "ToneLevel": -24,
+        "AlertTone": 0,
+        "ReplyMode": 2,
+        "PriorityDim": -6,
+        "PopupMode": 3,
+        "CueTimeout": 3,
+        "Isolate": 0,
+        "RoomId": {
+          "Type": 0,
+          "Id": 0
+        },
+        "RoomDim": 0,
+        "RoomPan": 0
+      },
+      "myId": "1",
+      "badge": 0,
+      "status": 0
+    },
+    "2": {
+      "Name": "Stage 2",
+      "DisplayName": "",
+      "Description": "",
+      "Color": 0,
+      "Mode": 0,
+      "Channels": {
+        "keys": [],
+        "badge": 0
+      },
+      "SpecialChannels": {
+        "Program": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Announce": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Emergency": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Direct": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        }
+      },
+      "Settings": {
+        "ActiveTime": 3,
+        "ToneLevel": -24,
+        "AlertTone": 0,
+        "ReplyMode": 2,
+        "PriorityDim": -6,
+        "PopupMode": 3,
+        "CueTimeout": 3,
+        "Isolate": 0,
+        "RoomId": {
+          "Type": 0,
+          "Id": 0
+        },
+        "RoomDim": 0,
+        "RoomPan": 0
+      },
+      "myId": "2",
+      "badge": 0,
+      "status": 0
+    },
+    "3": {
+      "Name": "Sound",
+      "DisplayName": "",
+      "Description": "",
+      "Color": 0,
+      "Mode": 0,
+      "Channels": {
+        "keys": [
+          "1"
+        ],
+        "badge": 0,
+        "1": {
+          "Assign": {
+            "Type": 2,
+            "Id": 1
+          },
+          "Override": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Talk": 0,
+          "Listen": 1,
+          "TalkMode": 3,
+          "ChannelMode": 0,
+          "CallMode": 3,
+          "CueMode": 0,
+          "ListenMode": 0,
+          "Priority": 0,
+          "Pan": 0,
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "myId": "1",
+          "badge": 0,
+          "status": 0
+        }
+      },
+      "SpecialChannels": {
+        "Program": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Announce": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Emergency": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Direct": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        }
+      },
+      "Settings": {
+        "ActiveTime": 3,
+        "ToneLevel": -24,
+        "AlertTone": 0,
+        "ReplyMode": 2,
+        "PriorityDim": -6,
+        "PopupMode": 3,
+        "CueTimeout": 3,
+        "Isolate": 0,
+        "RoomId": {
+          "Type": 0,
+          "Id": 0
+        },
+        "RoomDim": 0,
+        "RoomPan": 0
+      },
+      "myId": "3",
+      "badge": 0,
+      "status": 0
+    },
+    "4": {
+      "Name": "LX",
+      "DisplayName": "",
+      "Description": "",
+      "Color": 0,
+      "Mode": 0,
+      "Channels": {
+        "keys": [
+          "1"
+        ],
+        "badge": 0,
+        "1": {
+          "Assign": {
+            "Type": 2,
+            "Id": 1
+          },
+          "Override": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Talk": 0,
+          "Listen": 1,
+          "TalkMode": 3,
+          "ChannelMode": 0,
+          "CallMode": 3,
+          "CueMode": 0,
+          "ListenMode": 0,
+          "Priority": 0,
+          "Pan": 0,
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "myId": "1",
+          "badge": 0,
+          "status": 0
+        }
+      },
+      "SpecialChannels": {
+        "Program": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Announce": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Emergency": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Direct": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        }
+      },
+      "Settings": {
+        "ActiveTime": 3,
+        "ToneLevel": -24,
+        "AlertTone": 0,
+        "ReplyMode": 2,
+        "PriorityDim": -6,
+        "PopupMode": 3,
+        "CueTimeout": 3,
+        "Isolate": 0,
+        "RoomId": {
+          "Type": 0,
+          "Id": 0
+        },
+        "RoomDim": 0,
+        "RoomPan": 0
+      },
+      "myId": "4",
+      "badge": 0,
+      "status": 0
+    },
+    "5": {
+      "Name": "Follow 1",
+      "DisplayName": "",
+      "Description": "",
+      "Color": 0,
+      "Mode": 0,
+      "Channels": {
+        "keys": [
+          "1"
+        ],
+        "badge": 0,
+        "1": {
+          "Assign": {
+            "Type": 2,
+            "Id": 1
+          },
+          "Override": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Talk": 0,
+          "Listen": 1,
+          "TalkMode": 3,
+          "ChannelMode": 0,
+          "CallMode": 3,
+          "CueMode": 0,
+          "ListenMode": 0,
+          "Priority": 0,
+          "Pan": 0,
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "myId": "1",
+          "badge": 0,
+          "status": 0
+        }
+      },
+      "SpecialChannels": {
+        "Program": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Announce": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Emergency": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Direct": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        }
+      },
+      "Settings": {
+        "ActiveTime": 3,
+        "ToneLevel": -24,
+        "AlertTone": 0,
+        "ReplyMode": 2,
+        "PriorityDim": -6,
+        "PopupMode": 3,
+        "CueTimeout": 3,
+        "Isolate": 0,
+        "RoomId": {
+          "Type": 0,
+          "Id": 0
+        },
+        "RoomDim": 0,
+        "RoomPan": 0
+      },
+      "myId": "5",
+      "badge": 0,
+      "status": 0
+    },
+    "6": {
+      "Name": "Follow 2",
+      "DisplayName": "",
+      "Description": "",
+      "Color": 0,
+      "Mode": 0,
+      "Channels": {
+        "keys": [
+          "1"
+        ],
+        "badge": 0,
+        "1": {
+          "Assign": {
+            "Type": 2,
+            "Id": 1
+          },
+          "Override": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Talk": 0,
+          "Listen": 1,
+          "TalkMode": 3,
+          "ChannelMode": 0,
+          "CallMode": 3,
+          "CueMode": 0,
+          "ListenMode": 0,
+          "Priority": 0,
+          "Pan": 0,
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "myId": "1",
+          "badge": 0,
+          "status": 0
+        }
+      },
+      "SpecialChannels": {
+        "Program": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Announce": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Emergency": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        },
+        "Direct": {
+          "Assign": {
+            "Type": 0,
+            "Id": 0
+          },
+          "Level": {
+            "Value": 0,
+            "Min": -40,
+            "Max": 12
+          },
+          "Pan": 0,
+          "Dim": 0,
+          "myId": null,
+          "badge": 0,
+          "status": 0
+        }
+      },
+      "Settings": {
+        "ActiveTime": 3,
+        "ToneLevel": -24,
+        "AlertTone": 0,
+        "ReplyMode": 2,
+        "PriorityDim": -6,
+        "PopupMode": 3,
+        "CueTimeout": 3,
+        "Isolate": 0,
+        "RoomId": {
+          "Type": 0,
+          "Id": 0
+        },
+        "RoomDim": 0,
+        "RoomPan": 0
+      },
+      "myId": "6",
+      "badge": 0,
+      "status": 0
+    }
+  },
+  "Groups": {
+    "keys": [
+      "1"
+    ],
+    "badge": 0,
+    "1": {
+      "Name": "Tech",
+      "DisplayName": "",
+      "Description": "",
+      "Color": 0,
+      "myId": "1",
+      "badge": 0,
+      "status": 0
+    }
+  },
+  "Rooms": {
+    "keys": [],
+    "badge": 0
+  },
+  "Binary": "R0dPNQAAA4AAAAOAAAAAABzkuYz2RZkhdWTaJ9URAX/BSsEOT0ZpbG1zIERlZmF1bHSB\u002BUySblu4GX5BDmzSSiF9AEHvASq0EwDBIAQABAAEAAQABAAHAIcUAwADAAcMCAADAAIAAgAiDAkAwYmBcUdyb3VwIDFBMVBUQmFRU3RhZ2WBcUNhbWVyYXORgUxpZ2h0aW5nYVFWaWRlb2FRU291bmRxYVRhbGVudJGBGVByb2dyYW2xoVByb2R1Y3Rpb27BEMEOGUFubm91bmNlbWVudHOxoRlFbWVyZ2VuY3msWJFHcm91cCAxMDChkUdyb3VwIDEwMdECgtECQ8EcoURpcmVjdG9yIDFCEQERAoERARECEQMRBBEBAsEWoURpcmVjdG9yIDJCEQERAiERARECAsEWgVByb2R1Y2VyYhEBEQIRAyERARECAsETcVNvdW5kIDFCEQERBCERARECAsETcVNvdW5kIDJCEQERBCERARECAsETcVNvdW5kIDNCEQERBCERARECAsEQQUxYIDFCEQERBSERARECAsEQQUxYIDJCEQERBSERARECAsEWoVN3aXRjaGVyIDFCEQERBiERARECAsESoVN3aXRjaGVyIDICIREBEQICwRSBQ2FtZXJhIDFCEgERBiERARECAsEUgUNhbWVyYSAyQhIBEQYhEQERAgLBFIFDYW1lcmEgM0ISAREGIREBEQICwRWRQ2FtZXJhIDQgQhIBEQYhEQERAgLBFIFDYW1lcmEgNUISAREGIREBEQICwRSBQ2FtZXJhIDZCEgERBiERARECArExR0ZYAiERARECAsENUVdvcmRzAiERARECAsEWwQ1SYWNrIEVuZ2luZWVyAiERARECAsEYwQ9TdHJlYW0gRW5naW5lZXICIREBEQICwQ5hQ2FsbGVyAiERARECAsEQgVRhbGVudCAxAiERARECAsEQgVRhbGVudCAyAiERARECAsEQgVRhbGVudCAzAiERARECAsEQgVRhbGVudCA0AiERARECAsEQgVRhbGVudCA1AiERARECAsEQgVRhbGVudCA2AiERARECAsEWwQ1TdGFnZSBNYW5hZ2VyAiERARECAsIeQQLgMgNBCuAyA0ED4DIDQQfgMgNBBeAyA0EE4DIDwQwRMjEJyMghC8ghDMjBDGESAxHoGvRBEgMb9AEAAAA="
+}
