@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace OFilms.GreenGo.Project.DeviceProfiles
 {
-    public class RDXProfile : DeviceProfile
+    public class FourWireProfile : DeviceProfile
     {
-        public RDXProfile() : base("RDX")
+        public FourWireProfile():base("4WR")
         {
         }
-
-        public RadioPort? RadioPort { get; set; }
     }
 }

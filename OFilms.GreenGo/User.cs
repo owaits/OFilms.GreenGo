@@ -90,6 +90,7 @@ namespace OFilms.GreenGo.Project
         [JsonConverter(typeof(JsonKeyedListConverter<Channel>))]
         public List<Channel> Channels { get; set; } = new List<Channel>();
 
+        [JsonConverter(typeof(JsonDeviceProfileListConverter))]
         public List<DeviceProfile> DeviceProfiles { get; set; } = new List<DeviceProfile>();
 
         public SpecialChannels SpecialChannels { get; set; } = new SpecialChannels();

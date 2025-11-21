@@ -27,6 +27,18 @@ namespace OFilms.GreenGo.Project.JsonConverters
                                 case "RDX":
                                     keyList.Add(JsonSerializer.Deserialize<RDXProfile>(ref reader, options)!);
                                     break;
+                                case "2WR":
+                                    keyList.Add(JsonSerializer.Deserialize<TwoWireProfile>(ref reader, options)!);
+                                    break;
+                                case "4WR":
+                                    keyList.Add(JsonSerializer.Deserialize<FourWireProfile>(ref reader, options)!);
+                                    break;
+                                case "LineInOut":
+                                    keyList.Add(JsonSerializer.Deserialize<LineInOutProfile>(ref reader, options)!);
+                                    break;
+                                case "Wireless":
+                                    keyList.Add(JsonSerializer.Deserialize<WirelessProfile>(ref reader, options)!);
+                                    break;
                                 default:
                                     break;
                             }
@@ -45,26 +57,13 @@ namespace OFilms.GreenGo.Project.JsonConverters
         {
             writer.WriteStartObject();
 
-            //Write the Keys
-            writer.WritePropertyName("keys");
-            writer.WriteStartArray();
             foreach(var item in value)
             {
-                writer.WriteStringValue(item.MyId);
-            }
-            writer.WriteEndArray();
+                if (item.Name == null)
+                    throw new NullReferenceException($"You must set the Name for {item}");
 
-            //Write the badge
-            writer.WritePropertyName("badge");
-            writer.WriteNumberValue(0);
-
-            foreach(var item in value)
-            {
-                if (item.MyId == null)
-                    throw new NullReferenceException($"You must set the MyID for {item}");
-
-                writer.WritePropertyName(item.MyId);
-                JsonSerializer.Serialize<TValue>(writer, item, options);
+                writer.WritePropertyName(item.Name);
+                JsonSerializer.Serialize<DeviceProfile>(writer, item, options);
             }
 
             writer.WriteEndObject();

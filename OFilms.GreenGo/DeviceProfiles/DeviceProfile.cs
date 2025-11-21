@@ -11,6 +11,17 @@ namespace OFilms.GreenGo.Project.DeviceProfiles
     /// </summary>
     public abstract class DeviceProfile
     {
+        protected DeviceProfile(string name)
+        {
+            Name = name;
+        }
+
+
+        /// <summary>
+        /// Gets or sets the name of the profile.
+        /// </summary>
+        public string Name { get; private set; }
+
         /// <summary>
         /// Gets or sets the script used by this device.
         /// </summary>
