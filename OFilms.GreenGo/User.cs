@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using OFilms.GreenGo.Project;
 using OFilms.GreenGo.Project.JsonConverters;
 using System.Security.Principal;
+using OFilms.GreenGo.Project.DeviceProfiles;
 
 namespace OFilms.GreenGo.Project
 {
@@ -24,6 +25,15 @@ namespace OFilms.GreenGo.Project
         Extensions7 = 7,
         Extensions8 = 8,
         Extensions9 = 9
+    }
+
+    public enum UserBadge
+    {
+        None = 0,
+        OutOfSync = 1,
+        Lost = 2,
+        Good = 3,
+        Wireless = 4
     }
 
     public enum AlertTone
@@ -71,9 +81,16 @@ namespace OFilms.GreenGo.Project
 
         public UserMode Mode { get; set; } = UserMode.Normal;
 
+        /// <summary>
+        /// Gets or sets the icon or badge associated with the user icon.
+        /// </summary>
+        public UserBadge Badge { get; set; } = UserBadge.None;
+
 
         [JsonConverter(typeof(JsonKeyedListConverter<Channel>))]
         public List<Channel> Channels { get; set; } = new List<Channel>();
+
+        public List<DeviceProfile> DeviceProfiles { get; set; } = new List<DeviceProfile>();
 
         public SpecialChannels SpecialChannels { get; set; } = new SpecialChannels();
 
