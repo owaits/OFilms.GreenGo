@@ -16,7 +16,11 @@ namespace OFilms.GreenGo.Project
 
     public enum GreenGoBadge
     {
-        None = 0
+        None = 0,
+        OutOfSync = 1,
+        Lost = 2,
+        Good = 3,
+        Wireless = 4
     }
 
     public abstract class GreenGoElement
