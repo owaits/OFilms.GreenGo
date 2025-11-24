@@ -83,6 +83,11 @@ namespace OFilms.GreenGo.Project
 
         public UserSettings Settings { get; set; } = new UserSettings();
 
+        /// <summary>
+        /// Line in and out options for this user.
+        /// </summary>
+        public LineInOut? LineInOut { get; set; } = null;
+
         public override string ToString()
         {
             return Name;
@@ -95,7 +100,7 @@ namespace OFilms.GreenGo.Project
 
         public void RemoveFromGroup(Group group)
         {
-            foreach(var channel in Channels.Where(ch => ch.Assign.Type == LinkType.Group && ch.Assign.Id == group.Id).ToList())
+            foreach (var channel in Channels.Where(ch => ch.Assign.Type == LinkType.Group && ch.Assign.Id == group.Id).ToList())
             {
                 Channels.Remove(channel);
             }
@@ -142,5 +147,21 @@ namespace OFilms.GreenGo.Project
         public int RoomDim { get; set; }
 
         public Pan RoomPan { get; set; }
+    }
+
+    /// <summary>
+    /// The Line In/Out settings for a user.
+    /// </summary>
+    public class LineInOut
+    {
+        /// <summary>
+        /// The input settings for this line user.
+        /// </summary>
+        public LineInput Input { get; set; } = new LineInput();
+
+        /// <summary>
+        /// The output settings for this line user.
+        /// </summary>
+        public LineOutput Output { get; set; } = new LineOutput();
     }
 }
