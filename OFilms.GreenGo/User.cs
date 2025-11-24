@@ -101,7 +101,12 @@ namespace OFilms.GreenGo.Project
             }
         }
 
-        public void AddToGroup(Group group)
+        /// <summary>
+        /// Adds the user to the current group by creating a channel and assigning that channel to the specified group.
+        /// </summary>
+        /// <param name="group">The group to add this user to.</param>
+        /// <returns>The channel used to assign the group to thie user.</returns>
+        public Channel AddToGroup(Group group)
         {
             int userId = Channels.Any() ? Channels.Max(item => item.Id) + 1 : 1;
 
@@ -109,6 +114,7 @@ namespace OFilms.GreenGo.Project
             newChannel.Assign.CreateLink(group);
 
             Channels.Add(newChannel);
+            return newChannel;
         }
 
     }
