@@ -33,5 +33,13 @@ namespace OFilms.GreenGo.Config.Tests
             var project = GreenGoProject.Load("Bede's GreenGo.gg5");
             project.Save("CompareProject2.gg5");
         }
+
+        [TestMethod]
+        [DeploymentItem("TestFiles/Sleeping Beauty 2025.gg5")]
+        public void LoadSaveComparisonTest3()
+        {
+            var project = GreenGoProject.Load("Sleeping Beauty 2025.gg5");
+            project.Save("CompareProject3.gg5");
+        }
     }
 }
