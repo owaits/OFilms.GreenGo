@@ -24,6 +24,9 @@ namespace OFilms.GreenGo.Project.JsonConverters
                         {
                             switch(reader.GetString())
                             {
+                                case "BPX":
+                                    keyList.Add(JsonSerializer.Deserialize<BPXProfile>(ref reader, options)!);
+                                    break;
                                 case "RDX":
                                     keyList.Add(JsonSerializer.Deserialize<RDXProfile>(ref reader, options)!);
                                     break;
@@ -40,6 +43,7 @@ namespace OFilms.GreenGo.Project.JsonConverters
                                     keyList.Add(JsonSerializer.Deserialize<WirelessProfile>(ref reader, options)!);
                                     break;
                                 default:
+                                    reader.Skip();
                                     break;
                             }
                         }

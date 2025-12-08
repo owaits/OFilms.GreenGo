@@ -16,7 +16,6 @@ namespace OFilms.GreenGo.Project.DeviceProfiles
             Name = name;
         }
 
-
         /// <summary>
         /// Gets or sets the name of the profile.
         /// </summary>
