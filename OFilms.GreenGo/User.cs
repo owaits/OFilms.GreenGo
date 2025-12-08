@@ -27,15 +27,6 @@ namespace OFilms.GreenGo.Project
         Extensions9 = 9
     }
 
-    public enum UserBadge
-    {
-        None = 0,
-        OutOfSync = 1,
-        Lost = 2,
-        Good = 3,
-        Wireless = 4
-    }
-
     public enum AlertTone
     {
         Fast = 0,
@@ -81,11 +72,6 @@ namespace OFilms.GreenGo.Project
 
         public UserMode Mode { get; set; } = UserMode.Normal;
 
-        /// <summary>
-        /// Gets or sets the icon or badge associated with the user icon.
-        /// </summary>
-        public UserBadge Badge { get; set; } = UserBadge.None;
-
 
         [JsonConverter(typeof(JsonKeyedListConverter<Channel>))]
         public List<Channel> Channels { get; set; } = new List<Channel>();
@@ -96,6 +82,11 @@ namespace OFilms.GreenGo.Project
         public SpecialChannels SpecialChannels { get; set; } = new SpecialChannels();
 
         public UserSettings Settings { get; set; } = new UserSettings();
+
+        /// <summary>
+        /// Line in and out options for this user.
+        /// </summary>
+        public LineInOut? LineInOut { get; set; } = null;
 
         public override string ToString()
         {
@@ -109,13 +100,18 @@ namespace OFilms.GreenGo.Project
 
         public void RemoveFromGroup(Group group)
         {
-            foreach(var channel in Channels.Where(ch => ch.Assign.Type == LinkType.Group && ch.Assign.Id == group.Id).ToList())
+            foreach (var channel in Channels.Where(ch => ch.Assign.Type == LinkType.Group && ch.Assign.Id == group.Id).ToList())
             {
                 Channels.Remove(channel);
             }
         }
 
-        public void AddToGroup(Group group)
+        /// <summary>
+        /// Adds the user to the current group by creating a channel and assigning that channel to the specified group.
+        /// </summary>
+        /// <param name="group">The group to add this user to.</param>
+        /// <returns>The channel used to assign the group to thie user.</returns>
+        public Channel AddToGroup(Group group)
         {
             int userId = Channels.Any() ? Channels.Max(item => item.Id) + 1 : 1;
 
@@ -123,6 +119,7 @@ namespace OFilms.GreenGo.Project
             newChannel.Assign.CreateLink(group);
 
             Channels.Add(newChannel);
+            return newChannel;
         }
 
     }
@@ -150,5 +147,21 @@ namespace OFilms.GreenGo.Project
         public int RoomDim { get; set; }
 
         public Pan RoomPan { get; set; }
+    }
+
+    /// <summary>
+    /// The Line In/Out settings for a user.
+    /// </summary>
+    public class LineInOut
+    {
+        /// <summary>
+        /// The input settings for this line user.
+        /// </summary>
+        public LineInput Input { get; set; } = new LineInput();
+
+        /// <summary>
+        /// The output settings for this line user.
+        /// </summary>
+        public LineOutput Output { get; set; } = new LineOutput();
     }
 }
